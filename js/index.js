@@ -40,3 +40,27 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+let navStyle = document.querySelectorAll('header nav a')
+navStyle[0].style.color = 'green'
+navStyle[1].style.color = 'green'
+navStyle[2].style.color = 'green'
+navStyle[3].style.color = 'green'
+navStyle[4].style.color = 'green'
+navStyle[5].style.color = 'green'
+
+let nav = document.querySelectorAll('a')
+let text1 = document.createTextNode(siteContent["nav"]["nav-item-1"])
+let text2 = document.createTextNode(siteContent["nav"]["nav-item-2"])
+let text3 = document.createTextNode(siteContent["nav"]["nav-item-3"])
+let text4= document.createTextNode(siteContent["nav"]["nav-item-4"])
+let text5 = document.createTextNode(siteContent["nav"]["nav-item-5"])
+let text6 = document.createTextNode(siteContent["nav"]["nav-item-6"])
+
+nav[0].appendChild(text1)
+nav[1].appendChild(text2)
+nav[2].appendChild(text3)
+nav[3].appendChild(text4)
+nav[4].appendChild(text5)
+nav[5].appendChild(text6)
